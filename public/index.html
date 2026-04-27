@@ -3,12 +3,22 @@
   <head>
     <title>Welcome to My Website</title>
   </head>
+  <script>
+    function getRandomColor() {
+      const letters = "0123456789ABCDEF";
+      let color = "#";
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    document.getElementById("welcome").style.color = getRandomColor();
+  </script>
 
   <body>
-    <h1 id="welcome" style="color: #671f05">
-      Welcome to My Website 2025/05/29 Github deploy
-    </h1>
-    <h1>KHÁNH ĐÃ BIÊN TẬP VÀ TỰ DEPLOY THỬ NHA LẦN 5</h1>
+    <h1 id="welcome">Welcome to My Website 2025/05/29 Github deploy</h1>
+    <h1>KHÁNH ĐÃ BIÊN TẬP VÀ TỰ DEPLOY THỬ NHA LẦN 6</h1>
     <p>Thank you for visiting. Enjoy your stay!</p>
 
     <form action="/api/login" method="POST">
