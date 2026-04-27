@@ -2,9 +2,9 @@ name: Build and Push Docker Image
 
 on:
   # khi có hành vi push thì Git tự chạy ngay
-  push:
-    branches:
-      - master # hoặc thay đổi thành nhánh bạn muốn theo dõi
+  # push:
+  #   branches:
+  #     - master # hoặc thay đổi thành nhánh bạn muốn theo dõi
   # pull_request:
   #   branches:
   #     - master
